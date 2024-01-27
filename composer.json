@@ -1,0 +1,24 @@
+{
+    "name": "alexandrecardoso/form-builder",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/",
+            "core\\": "core/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alexandre Eduardo Cardoso",
+            "email": "68569575+aleduca@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "league/plates": "^3.5",
+        "slim/slim": "^4.12",
+        "slim/psr7": "^1.6",
+        "php-di/php-di": "^7.0"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^7.0"
+    }
+}
