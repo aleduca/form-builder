@@ -12,7 +12,7 @@ class Template implements TemplateInterface
     array $options = []
   ) {
     $config = require dirname(__FILE__, 3) . '/core/config/config.php';
-    $path = dirname(__FILE__, 3) . '/' . $config['path'];
+    $path = dirname(__FILE__, 3) . DIRECTORY_SEPARATOR . $config['path'];
     $template = new Engine($path);
     $this->injectForms($config, $template);
 

@@ -12,10 +12,9 @@ $container->addDefinitions([
   TemplateInterface::class => function () {
     return new \core\template\Template();
   },
-]);
-$container->addDefinitions([
   PDO::class => Connection::get()
 ]);
+
 // $container->addDefinitions($containers);
 $container = $container->build();
 
